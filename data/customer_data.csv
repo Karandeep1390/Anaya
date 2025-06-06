@@ -1,0 +1,12 @@
+customer_id,name,loan_offer,interest_rate,tenure,emi_amount,processing_fee,foreclosure_charges,offer_expiry,application_link,account_age_years,is_salary_account,avg_monthly_balance,credit_score,loan_history_score,monthly_income,employment_type,job_stability_years,is_festive_season,has_existing_loans
+CUST001,Ankit Jain,500000,10.5,24,23000,2500,1000,2024-12-31,https://uat.mb2.kotak.com/pl/ETB-login,3.5,TRUE,45000,780,good,85000,mnc,4.2,FALSE,FALSE
+CUST002,Akhilesh Yada,750000,9.8,36,24500,3750,1500,2024-11-30,https://uat.mb2.kotak.com/pl/ETB-login,7.2,TRUE,125000,820,excellent,120000,mnc,6.5,FALSE,TRUE
+CUST003,Abhinav Pachauri,1000000,11.2,48,26800,5000,2000,2025-01-15,https://uat.mb2.kotak.com/pl/ETB-login,2.1,FALSE,35000,740,good,75000,salaried,2.8,TRUE,FALSE
+CUST004,Sanjeev Sharma,300000,12.5,18,18500,1500,750,2024-10-31,https://uat.mb2.kotak.com/pl/ETB-login,1.8,FALSE,18000,690,average,45000,salaried,1.5,FALSE,FALSE
+CUST005,Jintu Mathew,850000,10.0,30,31200,4250,1700,2025-02-28,https://uat.mb2.kotak.com/pl/ETB-login,5.5,TRUE,90000,805,excellent,110000,government,8.0,FALSE,TRUE
+CUST006,Sneha Reddy,650000,11.0,42,22750,3250,1300,2024-09-15,https://uat.mb2.kotak.com/pl/ETB-login,4.2,TRUE,65000,765,good,70000,salaried,3.5,FALSE,FALSE
+CUST007,Rohit Singh,400000,13.2,12,35800,2000,800,2024-08-31,https://uat.mb2.kotak.com/pl/ETB-login,0.8,FALSE,12000,650,poor,40000,self_employed,0.5,FALSE,TRUE
+CUST008,Kavya Nair,900000,9.5,60,18900,4500,1800,2025-03-31,https://uat.mb2.kotak.com/pl/ETB-login,6.8,TRUE,180000,850,excellent,150000,business_owner,5.2,TRUE,FALSE
+CUST009,Karandeep Singh,550000,10.8,36,19250,2750,1100,2024-12-15,https://uat.mb2.kotak.com/pl/ETB-login,3.0,FALSE,28000,720,average,60000,salaried,2.0,TRUE,TRUE
+CUST010,Anita Gupta,720000,11.5,30,26400,3600,1440,2025-01-31,https://uat.mb2.kotak.com/pl/ETB-login,4.8,TRUE,85000,790,good,95000,mnc,4.0,TRUE,FALSE
+CUST011,Ishneet Kaur,720000,11.5,30,26400,3600,1440,2025-01-31,https://uat.mb2.kotak.com/pl/ETB-login,2.5,FALSE,55000,755,good,80000,salaried,3.2,TRUE,FALSE

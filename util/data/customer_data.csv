@@ -1,0 +1,11 @@
+customer_id,name,loan_offer,interest_rate,tenure,emi_amount,processing_fee,foreclosure_charges,offer_expiry,purpose,application_link
+CUST001,John Doe,500000,10.5,24,23000,2500,1000,2024-12-31,Home Renovation,https://example.com/apply/CUST001
+CUST002,Jane Smith,750000,9.8,36,24500,3750,1500,2024-11-30,Business Expansion,https://example.com/apply/CUST002
+CUST003,Rajesh Kumar,1000000,11.2,48,26800,5000,2000,2025-01-15,Education,https://example.com/apply/CUST003
+CUST004,Priya Sharma,300000,12.5,18,18500,1500,750,2024-10-31,Personal,https://example.com/apply/CUST004
+CUST005,Mohammed Ali,850000,10.0,30,31200,4250,1700,2025-02-28,Vehicle Purchase,https://example.com/apply/CUST005
+CUST006,Sarah Johnson,650000,11.0,42,22750,3250,1300,2024-09-15,Home Purchase,https://example.com/apply/CUST006
+CUST007,David Wilson,400000,13.2,12,35800,2000,800,2024-08-31,Medical Emergency,https://example.com/apply/CUST007
+CUST008,Anita Patel,900000,9.5,60,18900,4500,1800,2025-03-31,Business Investment,https://example.com/apply/CUST008
+CUST009,Robert Brown,550000,10.8,36,19250,2750,1100,2024-12-15,Debt Consolidation,https://example.com/apply/CUST009
+CUST010,Anita Gupta,720000,11.5,30,26400,3600,1440,2025-01-31,Wedding Expenses,https://example.com/apply/CUST010
