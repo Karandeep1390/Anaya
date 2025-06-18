@@ -34,7 +34,6 @@ maximumTenure: {customer_data.get('maximumtenure', '')} months
 Monthly EMI: {format_currency(customer_data.get('emi_amount', 0))}
 Processing Fee: {format_currency(customer_data.get('processing_fee', 0))}
 Foreclosure Charges: {format_currency(customer_data.get('foreclosure_charges', 0))}
-Offer Expiry: {customer_data.get('offer_expiry', '')}
 APR: {customer_data.get('apr', '')}
 Application Link: {customer_data.get('application_link', '')}
 """
