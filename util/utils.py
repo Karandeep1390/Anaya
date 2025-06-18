@@ -82,7 +82,7 @@ def load_customer_data(customer_id: Optional[str] = None) -> Dict[str, Any]:
 
             result = customer_data.iloc[0].to_dict()
             cleaned_result = _clean_customer_data(result)
-            logger.info(f"Successfully loaded data for customer: {customer_id}")
+            logger.info(f"Successfully loaded data for customer: {cleaned_result}")
             return cleaned_result
 
         # For demo purposes, return first customer
@@ -121,7 +121,9 @@ def _clean_customer_data(data: Dict[str, Any]) -> Dict[str, Any]:
         'processing_fee': 0.0,
         'foreclosure_charges': 0.0,
         'interest_rate': 0.0,
-        'tenure': 0
+        'minimumTenure': 0,
+        'maximumTenure': 0,
+        'apr': 0.0
     }
 
     string_fields = {
@@ -162,7 +164,7 @@ def _clean_customer_data(data: Dict[str, Any]) -> Dict[str, Any]:
                 cleaned_data[key] = value
 
     # Log the cleaned data for debugging
-    logger.debug(f"Cleaned customer data: {cleaned_data}")
+    logger.info(f"Cleaned customer data: {cleaned_data}")
     return cleaned_data
 
 

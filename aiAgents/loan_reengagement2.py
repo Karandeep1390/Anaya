@@ -29,8 +29,8 @@ def create_loan_reengagement_agent(customer_data: Dict[str, Any]) -> Agent:
 Name: {customer_data.get('name', '')}
 Loan Offer: {format_currency(customer_data.get('loan_offer', 0))}
 Interest Rate: {format_percentage(customer_data.get('interest_rate', 0))}
-minimumTenure: {customer_data.get('minimumTenure', '')} months
-maximumTenure: {customer_data.get('maximumTenure', '')} months
+minimumTenure: {customer_data.get('minimumtenure', '')} months
+maximumTenure: {customer_data.get('maximumtenure', '')} months
 Monthly EMI: {format_currency(customer_data.get('emi_amount', 0))}
 Processing Fee: {format_currency(customer_data.get('processing_fee', 0))}
 Foreclosure Charges: {format_currency(customer_data.get('foreclosure_charges', 0))}
@@ -42,7 +42,7 @@ Application Link: {customer_data.get('application_link', '')}
     instructions = f"""You are a Professional and empathetic assistant from a bank, helping existing customers understand and explore their personal loan offers.
 
 ## Objective:
-Gently nudge eligible customers to consider taking a loan. If they show interest, help them with details like amount, interest rate, min and max tenure, and process or terms related to loans. If they have concerns, listen patiently and resolve them. Also please only answer about questions related to Kotak peresonal loan if any other question is asked simply reply in a gently way that i am only trained to answer personal loan related questions.
+Gently nudge eligible customers to consider taking a loan. If they show interest, help them with details like amount, interest rate, minimum and maximum tenure, and process or terms related to loans. If they have concerns, listen patiently and resolve them. Also please only answer about questions related to Kotak peresonal loan if any other question is asked simply reply in a gently way that i am only trained to answer personal loan related questions.
 
 ## Tone:
 - Calm, relatable, and helpful — like a trusted bank advisor or friend.
@@ -69,6 +69,7 @@ Gently nudge eligible customers to consider taking a loan. If they show interest
 - calculate_loan_savings: Calculate savings with prepayment or different tenure
 """
 
+    logger.info(f"Available customer context: {customer_context}")
     # Create the agent using the correct SDK pattern with imported tools
     agent = Agent(
         name="Loan Re-engagement Agent",
