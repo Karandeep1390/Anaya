@@ -332,6 +332,7 @@ def login_form() -> bool:
             else:
                 # Extract customer_id from user_data
                 customer_id = user_data.get('customer_id')
+                name = user_data.get('name')
 
                 # Load customer data
                 customer_data = get_customer_details(customer_id) if customer_id else None
@@ -341,8 +342,9 @@ def login_form() -> bool:
                 st.session_state.username = username
                 st.session_state.customer_data = customer_data
                 st.session_state.user_role = user_data.get('role', 'customer')
+                st.session_state.name= name
 
-                logger.info(f"User {username} (Customer: {customer_id}) logged in successfully")
+                logger.info(f"User {name} (Customer: {customer_id}) logged in successfully")
 
                 # Show welcome message
                 welcome_name = customer_data.get('name', username) if customer_data else username

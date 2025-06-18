@@ -367,9 +367,8 @@ with st.container():
     # Title and welcome message
     st.markdown(f"""
     <div class="welcome-message">
-        <h1>💰 Anaya</h1>
-        <p>Welcome, <strong>{st.session_state.username}</strong>! 👋</p>
-        <p>I'm your intelligent loan assistant powered by advanced AI tools. I can help you understand your Personal Loan offer, calculate EMIs, offer dynamic pricing, and answer any questions! 🤖✨</p>
+        <p>Welcome, <strong>{st.session_state.name}</strong>! 👋</p>
+        <p>I'm Anaya, your intelligent loan assistant. I can help you understand your Personal Loan offer, calculate EMIs, offer dynamic pricing, and answer any questions!</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -457,16 +456,16 @@ if st.session_state.session_history['messages']:
             # Show timestamp for admin users
             if hasattr(st.session_state, 'user_role') and st.session_state.user_role == 'admin':
                 st.caption(f"⏰ {message.get('timestamp', 'No timestamp')}")
-else:
-    st.markdown("""
-    <div class="empty-chat">
-        <h3>🤖 Start the conversation!</h3>
-        <p>Ask me anything about your loan offer. I have powerful tools to help you!</p>
-        <p><strong>I can:</strong></p>
-        <p>• Get your loan details • Modify loan details</p>
-        <p>• Dynamic Pricing • And much more!</p>
-    </div>
-    """, unsafe_allow_html=True)
+# else:
+#     st.markdown("""
+#     <div class="empty-chat">
+#         <h3>🤖 Start the conversation!</h3>
+#         <p>Ask me anything about your loan offer. I have powerful tools to help you!</p>
+#         <p><strong>I can:</strong></p>
+#         <p>• Get your loan details • Modify loan details</p>
+#         <p>• Dynamic Pricing • And much more!</p>
+#     </div>
+#     """, unsafe_allow_html=True)
 
 # Chat input with agentic processing
 if prompt := st.chat_input("Ask me about your loan offer..."):
